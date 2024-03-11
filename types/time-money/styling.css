@@ -1,0 +1,188 @@
+/* 
+    MADE BY MONNAPSE 
+*/
+
+
+
+/* ROOT */
+:root {
+    --gold: #BC9548;
+}
+
+/* TAG PROPERTIES */
+* {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+body {
+    background-color: #212224;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    font-weight: 400;
+}
+h1 {
+    color: white;
+    font-weight: bolder;
+}
+
+/* POSITIONING */
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -moz-transform: translate(-50%, -50%); /* Firefox */
+    -ms-transform: translate(-50%, -50%);  /* IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* Safari and Chrome*/
+    -o-transform: translate(-50%, -50%); /* Opera */
+    transform: translate(-50%, -50%);
+}
+.center-relative {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    -moz-transform: translate(-50%, -50%); /* Firefox */
+    -ms-transform: translate(-50%, -50%);  /* IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* Safari and Chrome*/
+    -o-transform: translate(-50%, -50%); /* Opera */
+    transform: translate(-50%, -50%);
+}
+.center-vertically {
+    position: absolute;
+    top: 50%;
+    -moz-transform: translateY(-50%); /* Firefox */
+    -ms-transform: translateY(-50%);  /* IE 9 */
+    -webkit-transform: translateY(-50%); /* Safari and Chrome*/
+    -o-transform: translateY(-50%); /* Opera */
+    transform: translateY(-50%);
+}
+.center-vertically-relative {
+    position: relative;
+    top: 50%;
+    -moz-transform: translateY(-50%); /* Firefox */
+    -ms-transform: translateY(-50%);  /* IE 9 */
+    -webkit-transform: translateY(-50%); /* Safari and Chrome*/
+    -o-transform: translateY(-50%); /* Opera */
+    transform: translateY(-50%);
+}
+.center-horizontally {
+    position: absolute;
+    left: 50%;
+    -moz-transform: translateX(-50%); /* Firefox */
+    -ms-transform: translateX(-50%);  /* IE 9 */
+    -webkit-transform: translateX(-50%); /* Safari and Chrome*/
+    -o-transform: translateX(-50%); /* Opera */
+    transform: translateX(-50%);
+}
+.center-horizontally-relative {
+    position: relative;
+    left: 50%;
+    -moz-transform: translateX(-50%); /* Firefox */
+    -ms-transform: translateX(-50%);  /* IE 9 */
+    -webkit-transform: translateX(-50%); /* Safari and Chrome*/
+    -o-transform: translateX(-50%); /* Opera */
+    transform: translateX(-50%);
+}
+
+/* TABLE */
+table tr:first-child {
+    background-color: #161718;
+}
+table tr:first-child th {
+    color: #B7B7B7;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1em;
+}
+tr {
+    background-color: #242527;
+    width: 100%;
+    height: 50px;
+}
+th {
+    border: 1px solid #393939;
+    color: #737373;
+    text-align: left;
+    text-indent: 20px;
+}
+th input {
+    border: none;
+    text-decoration: none;
+    background-color: transparent;
+    stroke-width: 0;
+    outline: none;
+    width: calc(100% - 40px);
+    height: 100%;
+    padding: 0;
+    margin: auto;
+    border-spacing: 0;
+    color: #737373;
+    font-size: 1em;
+}
+input[type="time"]::-webkit-calendar-picker-indicator{
+    filter: invert(47%) sepia(0%) saturate(1127%) hue-rotate(138deg) brightness(95%) contrast(91%);
+}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button 
+{
+   -webkit-appearance: none;
+}
+
+/* CLASS STYLING */
+.container {
+    width: 85%;
+    height: 90%;
+}
+.top {
+    width: 100%;
+    text-align: center;
+}
+.title {
+    height: 30px;
+    width: 100%;
+}
+.by {
+    height: auto;
+    width: 100%;
+    color: #737373;
+}
+.source-code-button {
+    background-color: #333436;
+    border-radius: 100px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #575757;
+    display: block;
+    width: 100%;
+    height: 50px;
+    top: 65px;
+    text-align: center;
+}
+.source-code-button span {
+    color: var(--gold);
+    text-align: center;
+    display: block;
+    width: auto;
+    height: auto;
+}
+.new-value th {
+    text-align: center;
+}
+.new-value:hover {
+    cursor: pointer;
+}
+
+.chart {
+    width: 100%;
+    height: 350px;
+    top: 30px;
+}
