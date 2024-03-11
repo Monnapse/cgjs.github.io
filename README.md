@@ -11,6 +11,7 @@ Paste this to the header  ``` <script src="https://monnapse.github.io/cgjs.githu
 
 # Elements
 chart-cgjs - The main chart element
+
 value-cgjs - The point inside chart, put this inside chart-cgjs
 
 # chart-cgjs
