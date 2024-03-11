@@ -16,10 +16,16 @@ value-cgjs - The point inside chart, put this inside chart-cgjs
 
 # chart-cgjs
 Basic Attributes:
-- theme
-- type
-- value1
-- value2
+- ```theme``` The theme of chart.
+- ```type``` The type of chart.
+- ```value1``` The name of the vertical Value.
+- ```value2``` The name of the horizontal Value.
+
+
+# value-cgjs
+Basic Attributes:
+- ```value1``` The value.
+- ```value2``` The value.
 
 # Example Code
 ```
