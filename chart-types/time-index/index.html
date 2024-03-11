@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>CGJS - Chart Graphing JavaScript</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="styling.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://monnapse.github.io/cgjs.github.io/releases/CGJS.js"></script>
+  <script src="InfiniteTable.js"></script>
+</head>
+
+<body>
+    <div class="container center">
+        <div class="top">
+            <h1 class="title">CGJS - Chart Graphing JavaScript (TIME MONEY)</h1>
+            <a class="by" href="https://github.com/Monnapse" target="_blank">By Monnapse</a>
+        </div>
+        
+        <chart-cgjs id="chart" class="chart center-horizontally-relative" theme="gold-accent-dark" type="index-money" value1="price" value2="index", time-split="5"></chart-cgjs>
+    
+        <a class="source-code-button center-horizontally-relative" href="https://github.com/Monnapse/CGJS-Chart-Graphing-JavaScript" target="_blank"><span class="center">Source Code</span></a>
+
+        <table class="center-horizontally-relative" style="top: 100px ">
+            <tbody id="value-list">
+                <tr>
+                    <th>Price</th>
+                    <th>Time</th>
+                </tr>
+                <tr id="new-value-button" class="new-value">
+                    <th colspan="3">New Value</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
