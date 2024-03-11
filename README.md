@@ -16,12 +16,16 @@ value-cgjs - The point inside chart, put this inside chart-cgjs
 
 # chart-cgjs
 Basic Attributes:
-    * theme
-    * type
-    * value1
-    * value2
+- theme
+- type
+- value1
+- value2
 
 # Example Code
 ```
-
-``
+ <chart-cgjs id="chart" class="chart center-horizontally-relative" theme="gold-accent-dark" type="time-money" value1="price" value2="time", time-split="5">
+    <value-cgjs value1="5.35" value2="06:00:00"></value-cgjs>
+    <value-cgjs value1="3.41" value2="14:36:00"></value-cgjs>
+    <value-cgjs value1="3.01" value2="18:00:00"></value-cgjs>
+ </chart-cgjs>
+```
