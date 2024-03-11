@@ -5,6 +5,7 @@
 
 # Examples
 https://monnapse.github.io/cgjs.github.io/chart-types/time-money/
+
 https://monnapse.github.io/cgjs.github.io/chart-types/time-money/?nodes=1.32,10:00:30,5.34,08:03:03,3.6543,12:53:05,0.3,03:03:03
 
 # Installing
