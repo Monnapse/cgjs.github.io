@@ -14,8 +14,11 @@ chart-cgjs - The main chart element
 value-cgjs - The point inside chart, put this inside chart-cgjs
 
 # chart-cgjs
-Attributes:
-
+Basic Attributes:
+    * theme
+    * type
+    * value1
+    * value2
 
 # Example Code
 ```
