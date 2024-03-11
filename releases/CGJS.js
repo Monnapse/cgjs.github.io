@@ -589,12 +589,12 @@ class CGJSTimeMoney extends CGJSChartType {
         const styleSheetOutside = document.createElement("link");
         styleSheetOutside.rel = "stylesheet";
         styleSheetOutside.type = "text/css";
-        styleSheetOutside.href = "https://cdn.jsdelivr.net/gh/Monnapse/CGJS-Chart-Graphing-JavaScript@main/CGJS/ChartThemes/"+theme+"-outside.css";
+        styleSheetOutside.href = "https://monnapse.github.io/cgjs.github.io/releases/ChartThemes/"+theme+"-outside.css";
 
         const styleSheetInside = document.createElement("link");
         styleSheetInside.rel = "stylesheet";
         styleSheetInside.type = "text/css";
-        styleSheetInside.href = "https://cdn.jsdelivr.net/gh/Monnapse/CGJS-Chart-Graphing-JavaScript@main/CGJS/ChartThemes/"+theme+"-inside.css";
+        styleSheetInside.href = "https://monnapse.github.io/cgjs.github.io/releases/ChartThemes/"+theme+"-inside.css";
 
         document.head.appendChild(styleSheetOutside);
         shadowRoot.appendChild(styleSheetInside);
