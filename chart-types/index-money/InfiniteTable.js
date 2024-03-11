@@ -24,11 +24,11 @@ document.addEventListener("DOMContentLoaded", event=>{
         nodesList.splice(0,2);
         createNodeInput(price, time);
     } else {
-        createNodeInput(5.35, "06:00:00");
-        createNodeInput(3.41, "14:36:00");
-        createNodeInput(3.01, "18:00:00");
-        createNodeInput(1.01, "12:00:00");
-        createNodeInput(7.01, "08:00:00");
+        createNodeInput(5.35, 1);
+        createNodeInput(3.41, 2);
+        createNodeInput(3.01, 3);
+        createNodeInput(1.01, 4);
+        createNodeInput(7.01, 5);
     }
 
     document.getElementById("new-value-button").addEventListener("click", event=>{
