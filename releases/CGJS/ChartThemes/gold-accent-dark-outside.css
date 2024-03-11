@@ -1,0 +1,12 @@
+/*
+    CGJS - GOLD ACCENT DARK THEME OUTSIDE
+*/
+
+:root {
+    --gold: #BC9548;
+}
+
+chart-cgjs {
+    background-color: #1D1E20;
+    border-color: var(--gold);
+}

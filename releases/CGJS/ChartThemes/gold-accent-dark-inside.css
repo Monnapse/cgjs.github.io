@@ -1,0 +1,29 @@
+/*
+    CGJS - GOLD ACCENT DARK THEME INSIDE
+*/
+
+.chart-cgjs-side {
+    background-color: transparent;
+}
+.chart-cgjs-bottom {
+    background-color: transparent;
+}
+.chart-cgjs-chart {
+    border-color: #252729;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+.cgjs-vertical-value {
+    color: white;
+}
+.cgjs-horizontal-value {
+    color: white;
+}
+.cgjs-chart-label {
+    background-color: rgba(47, 49, 52, 0.5);
+}
+.cgjs-chart-label-value span {
+    color: #B1B1B1;
+}
