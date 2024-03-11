@@ -8,6 +8,10 @@ https://monnapse.github.io/cgjs.github.io/chart-types/time-money/
 
 https://monnapse.github.io/cgjs.github.io/chart-types/time-money/?nodes=1.32,10:00:30,5.34,08:03:03,3.6543,12:53:05,0.3,03:03:03
 
+http://127.0.0.1:5500/chart-types/index-money/index.html
+
+http://127.0.0.1:5500/chart-types/index-money/index.html?nodes=1.0,1,3.23,2,2.94,3,6.84,4
+
 # Installing
 Paste this to the header  ``` <script src="https://monnapse.github.io/cgjs.github.io/releases/CGJS.js"></script> ```
 

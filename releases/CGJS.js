@@ -57,8 +57,8 @@ class CGJSChart extends HTMLElement {
             if (type == "time-money") {
                 this.chartTypeClass = new CGJSTimeMoney(this);
             } else if (type == "index-money") {
-                this.chartTypeClass = CGJSIndexMoney(this);
-            } else {12345
+                this.chartTypeClass = new CGJSIndexMoney(this);
+            } else {
                 // No type specified or type misspelled
                 this.chartTypeClass = new CGJSChartType(this);
                 return;
@@ -1173,7 +1173,7 @@ class CGJSIndexMoney extends CGJSChartType {
         lowestTimeElement.classList.add("cgjs-horizontal-value");
         this.bottom.appendChild(lowestTimeElement);
 
-        //var timeSplit = parseInt(this.chartClass.getAttribute("time-split"));
+        var indexSplit = parseInt(this.chartClass.getAttribute("index-split"));
         //var timeNormal = (highestTime-lowestTime) / (timeSplit+1);
         //var lastValue = lowestTime;
         //console.log(timeNormal);
@@ -1184,6 +1184,21 @@ class CGJSIndexMoney extends CGJSChartType {
         //    
         //    timeElement.classList.add("cgjs-horizontal-value");
         //    this.bottom.appendChild(timeElement);
+        //}
+
+        //console.log(this.splitRange(0, 5, 2));
+        //if (highest - lowest > 3) {
+        var indexRange = this.splitRange(lowest, highest, indexSplit);
+        console.log(indexRange);
+        indexRange.forEach(i=>{
+            i=i.toString();
+            if (i != lowest || i != highest) {
+                const indexElement = document.createElement("span");
+                indexElement.textContent = i;
+                indexElement.classList.add("cgjs-horizontal-value");
+                this.bottom.appendChild(indexElement);
+            }
+        })
         //}
 
         const highestTimeElement = document.createElement("span");
@@ -1400,6 +1415,19 @@ class CGJSIndexMoney extends CGJSChartType {
             if (nodePoint.id == nodeId) {node = nodePoint;}
         })
         return node;
+    }
+    splitRange(start, end, splitSize) {
+        start = parseInt(start);
+        end = parseInt(end);
+        const result = [];
+        for (let i = start; i <= end; i++) {
+            if ((i - start) % splitSize === 0) {
+                console.log(i,start)
+                if (i!=start && i!=end) {result.push(i);}
+            }
+        }
+        //result.splice(0, 1);
+        return result;
     }
 }
 
