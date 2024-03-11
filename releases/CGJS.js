@@ -583,7 +583,7 @@ class CGJSTimeMoney extends CGJSChartType {
         //let value1 = this.chartClass.getAttribute("value1");
         //let value2 = this.chartClass.getAttribute("value2");
         //console.log(type, value1, value2);
-        ctx.fillStyle = CGJSThemes[theme].inner;
+        //ctx.fillStyle = CGJSThemes[theme].inner;
 
         // Theme
         const styleSheetOutside = document.createElement("link");
