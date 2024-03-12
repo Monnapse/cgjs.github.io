@@ -33,6 +33,9 @@ h1 {
     color: white;
     font-weight: bolder;
 }
+h2 {
+    position: relative;
+}
 
 /* POSITIONING */
 .center {
@@ -100,6 +103,7 @@ table tr:first-child th {
     color: #B7B7B7;
 }
 table {
+    position: relative;
     width: 100%;
     border-collapse: collapse;
     font-size: 1em;
@@ -185,4 +189,38 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     width: 100%;
     height: 350px;
     top: 30px;
+}
+
+.node-input {
+    position: relative;
+    border: none;
+    text-decoration: none;
+    background-color: #242527;
+    border: 1px solid #393939;
+    color: #737373;
+    text-align: left;
+    text-indent: 20px;
+    stroke-width: 0;
+    outline: none;
+    width: 100%;
+    height: 30px;
+    color: #737373;
+    font-size: 1em;
+    top: 150px;
+}
+.import-nodes {
+    position: relative;
+    top: 170px;
+    background-color: #333436;
+    border-radius: 100px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #575757;
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+.import-nodes:hover {
+    cursor: pointer;
 }

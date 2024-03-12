@@ -34,6 +34,20 @@ document.addEventListener("DOMContentLoaded", event=>{
     document.getElementById("new-value-button").addEventListener("click", event=>{
         createNodeInput();
     })
+
+    document.getElementById("import-nodes").addEventListener("click", event=>{
+        const value = document.getElementById("node-input").value;
+        var nodesList = value.split(",");
+        console.log(value.length);
+        if (value.indexOf(",") > 0) {
+            nodesList.forEach(node=>{
+                var price = nodesList[0];
+                var index = nodesList[1];
+                nodesList.splice(0,2);
+                createNodeInput(price, index);
+            })
+        }
+    })
 })
 
 function createNodeInput(value1, value2) {

@@ -1189,7 +1189,7 @@ class CGJSIndexMoney extends CGJSChartType {
         //console.log(this.splitRange(0, 5, 2));
         //if (highest - lowest > 3) {
         var indexRange = this.splitRange(lowest, highest, indexSplit);
-        console.log(indexRange);
+        //console.log(indexRange);
         indexRange.forEach(i=>{
             i=i.toString();
             if (i != lowest || i != highest) {
@@ -1422,7 +1422,7 @@ class CGJSIndexMoney extends CGJSChartType {
         const result = [];
         for (let i = start; i <= end; i++) {
             if ((i - start) % splitSize === 0) {
-                console.log(i,start)
+                //console.log(i,start)
                 if (i!=start && i!=end) {result.push(i);}
             }
         }
