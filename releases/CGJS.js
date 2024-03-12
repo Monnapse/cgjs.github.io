@@ -1133,12 +1133,12 @@ class CGJSIndexMoney extends CGJSChartType {
         const highestValue = this.chartClass.getHighestNodeValue(CGJSNodeValues.actualFirstValue);
 
         const lowestCost = document.createElement("span");
-        lowestCost.textContent = "$"+lowestValue;
+        lowestCost.textContent = "$"+lowestValue.toFixed(2);
         lowestCost.classList.add("cgjs-vertical-value");
         lowestCost.style.bottom = "0";
 
         const highestCost = document.createElement("span");
-        highestCost.textContent = "$"+highestValue;
+        highestCost.textContent = "$"+highestValue.toFixed(2);
         highestCost.classList.add("cgjs-vertical-value");
         highestCost.style.top = "0";
 
