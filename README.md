@@ -2,6 +2,8 @@
  Create Charts/Graphs with this JavaScript Library Package
 
 ![screenshot](https://github.com/Monnapse/cgjs.github.io/blob/main/preview.png?raw=true)
+
+Imported DELL Stock
 ![screenshot](https://github.com/Monnapse/cgjs.github.io/blob/main/preview2.png?raw=true)
 
 # Examples
