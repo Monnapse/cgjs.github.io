@@ -127,6 +127,7 @@ class CGJSChart extends HTMLElement {
             var verticalPercentage = getReversedPercentage(node[CGJSNodeValues.actualFirstValue], verticalLowest, verticalHighest)/1.01+0.005;
             var horizontalPercentage = getPercentage(node[CGJSNodeValues.actualSecondValue], horizontalLowest, horizontalHighest);
 
+            console.log(horizontalLowest, horizontalHighest);
             if (lastY == undefined) {
                 lastX = horizontalPercentage;
                 lastY = getReversedPercentage(node[CGJSNodeValues.actualFirstValue], verticalLowest, verticalHighest);
@@ -227,8 +228,10 @@ class CGJSChart extends HTMLElement {
         this.nodes.forEach(node => {
             var value = node[valueName];
             if (highest == undefined) {highest = value;}
-            if (value > highest) {
+            if (parseFloat(value) > parseFloat(highest)) {
                 highest = value;
+            } else {
+                console.log("Passes on", value);
             }
         });
     

@@ -9,4 +9,5 @@
 chart-cgjs {
     background-color: #1D1E20;
     border-color: var(--gold);
+    overflow: hidden;
 }
