@@ -39,23 +39,16 @@ document.addEventListener("DOMContentLoaded", event=>{
         const value = document.getElementById("node-input").value;
         var nodesList = value.split(",");
         const length = nodesList.length;
-        console.log(nodesList.length);
         if (value.indexOf(",") > 0) {
             for (var i = 0;i < length;i++) {
-                console.log(nodesList.length)
                 var price = nodesList[0];
                 var index = nodesList[1];
-                nodesList.splice(0,2);
-                createNodeInput(price, index);
+                if (price!=undefined && index!=undefined) {
+                    nodesList.splice(0,2);
+                    createNodeInput(price, index);
+                }
             }
-            //nodesList.forEach(node=>{
-            //    var price = nodesList[0];
-            //    var index = nodesList[1];
-            //    nodesList.splice(0,2);
-            //    createNodeInput(price, index);
-            //})
         }
-        console.log(nodesList);
     })
 })
 
