@@ -38,15 +38,24 @@ document.addEventListener("DOMContentLoaded", event=>{
     document.getElementById("import-nodes").addEventListener("click", event=>{
         const value = document.getElementById("node-input").value;
         var nodesList = value.split(",");
-        console.log(value.length);
+        const length = nodesList.length;
+        console.log(nodesList.length);
         if (value.indexOf(",") > 0) {
-            nodesList.forEach(node=>{
+            for (var i = 0;i < length;i++) {
+                console.log(nodesList.length)
                 var price = nodesList[0];
                 var index = nodesList[1];
                 nodesList.splice(0,2);
                 createNodeInput(price, index);
-            })
+            }
+            //nodesList.forEach(node=>{
+            //    var price = nodesList[0];
+            //    var index = nodesList[1];
+            //    nodesList.splice(0,2);
+            //    createNodeInput(price, index);
+            //})
         }
+        console.log(nodesList);
     })
 })
 
